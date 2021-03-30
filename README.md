@@ -63,3 +63,5 @@ Okapi: 1.41.0</br>
 Ratel: 1.41.0</br>
 File Filters: 1.41.0 [PlainTextFilter]</br>
 JDK: 15.0.2</br>
+Python: 3.9.2</br>
+Django: 3.0.9</br>
