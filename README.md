@@ -22,18 +22,19 @@ For Better understanding, kindly go through the following steps or simply try on
 3.	While working with Rainbow tool, it seems, it has been designed to use SRX Segmentary [SRXSegmenter] for segmenting each sentence from the input source/document (i.e. file content). Segmentation rules is required for SRXSegmenter. So, we have taken a Default SRX Rules from the Rainbow tool for sentence-wise segmentation (which is tested using Ratel tool as well - by applying it's regex patterns) from Okapi framework. 
 4.	The results are verified in the Ratel tool by the given Regex pattern. An SRX file is hence created post verification.
 
-### "SegmentationRules",
-Here is the retrived [SRX file](https://github.com/Ailaysa/dj_ailaysa/blob/dev_txt/SegmentationRules/okapi_default_icu4j.srx)
+## Segmentation Rules
+Here is the retrived [Default SRX file](https://github.com/Ailaysa/dj_ailaysa/blob/dev_txt/SegmentationRules/okapi_default_icu4j.srx) from Okapi Framework. 
 
 
-### Spring Boot codebase
+## Spring Boot codebase
 Please find the [GitHub link to the Java Spring Boot code base](https://github.com/Ailaysa/spring_ailaysa) where the Okapi classes had been used for our implementation.
 
-### Django codebase
+## Django codebase
 Please find the [GitHub link to the Python - Django code base](https://github.com/Ailaysa/dj_ailaysa) where the result of Okapi implementations are received as Json response.
 
-### The Result we are getting while running mainProcessor.java
-![Capture](https://user-images.githubusercontent.com/15103613/112989133-366fba80-9182-11eb-9b9f-274e84054333.PNG)
+## The Result we are getting while running mainProcessor.java
+![Wokspace_Capture](https://user-images.githubusercontent.com/15103613/112992601-eeeb2d80-9185-11eb-8126-5178bb0d2edc.PNG)
+
 
 From the above process, we are about to take the Text content from the input file (i.e. source2.txt) are being extracted by Sentences, but the issue is that we are unaware of any methods for processing text which is in different formats.
 For example, if a MS Office Word file consists, different number of formats for text, like formatting the text with bold, italic, underlined, aligned places, highlights, text colors, and so on. 
@@ -44,7 +45,7 @@ This case actually passes only if there is no formattings appended in DOCX, XLSX
 ### Ratel Tool from Okapi Framework
 But on the other hand, when we’re testing the same file using Ratel tool, segmentation process happens as follows (using the same SRX Rules using "SegmentationRules.srx").
 
-![Sentence_wise_Segmented_using_Ratel](https://user-images.githubusercontent.com/15103613/112159531-467e1c00-8c0f-11eb-89a7-7376afd524a4.png)
+![Sentence_wise_Segmented_using_Ratel](https://user-images.githubusercontent.com/15103613/112991113-68821c00-9184-11eb-95e7-711c9e2f8b0f.PNG)
 
 
 ## Quick Start for Guidance Requirement
