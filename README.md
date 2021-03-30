@@ -40,7 +40,7 @@ From the above process, we are about to take the Text content from the input fil
 For example, if a MS Office Word file consists, different number of formats for text, like formatting the text with bold, italic, underlined, aligned places, highlights, text colors, and so on. </br>
 Hence, we are unable to process and show it up the complete sentence on the workspace.</br></br>
 As of now, what we did is, we can able to make the sentence-wise segmentation in Plain text format.
-This case actually passes only if there is no formattings appended in DOCX, XLSX, PPTX, but completely fails in the cases of using formats in _between_ or _in_ the sentences of DOCX, XLSX, PPTX file inputs.
+This case actually passes only if there is no formattings appended in **DOCX, XLSX, PPTX**, but completely fails in the cases of using formats in **_between_** or **_in_** the sentences of **DOCX, XLSX, PPTX** file inputs.
 
 ### Ratel Tool from Okapi Framework
 But on the other hand, when we’re testing the same file using Ratel tool, segmentation process happens as follows (using the same SRX Rules using "SegmentationRules.srx").
