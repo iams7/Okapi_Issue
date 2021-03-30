@@ -22,7 +22,7 @@ For Better understanding, kindly go through the following steps or simply try on
 3.	While working with Rainbow tool, it seems, it has been designed to use SRX Segmentary [SRXSegmenter] for segmenting each sentence from the input source/document (i.e. file content). Segmentation rules is required for SRXSegmenter. So, we have taken a Default SRX Rules from the Rainbow tool for sentence-wise segmentation (which is tested using Ratel tool as well - by applying it's regex patterns) from Okapi framework. 
 4.	The results are verified in the Ratel tool by the given Regex pattern. An SRX file is hence created post verification.
 
-##### "SegmentationRules",
+### "SegmentationRules",
 Here is the retrived [SRX file](https://github.com/Ailaysa/dj_ailaysa/blob/dev_txt/SegmentationRules/okapi_default_icu4j.srx)
 
 
