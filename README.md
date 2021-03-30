@@ -37,7 +37,7 @@ Please find the [GitHub link to the Python - Django code base](https://github.co
 
 
 From the above process, we are about to take the Text content from the input file (i.e. source2.txt) are being extracted by Sentences, but the issue is that we are unaware of any methods for processing text which is in different formats.
-For example, if a MS Office Word file consists, different number of formats for text, like formatting the text with bold, italic, underlined, aligned places, highlights, text colors, and so on. </br>
+For example, if a MS Office Word file consists, different number of formats for text, like formatting the text with bold, italic, underlined, aligned places, highlights, text colors, and so on.</br></br>
 Hence, we are unable to process and show it up the complete sentence on the workspace.</br></br>
 As of now, what we did is, we can able to make the sentence-wise segmentation in Plain text format.
 This case actually passes only if there is no formattings appended in **DOCX, XLSX, PPTX**, but completely fails in the cases of using formats in **_between_** or **_in_** the sentences of **DOCX, XLSX, PPTX** file inputs.
