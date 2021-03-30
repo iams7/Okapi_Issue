@@ -12,6 +12,7 @@ For Better understanding, kindly go through the following steps or simply try on
 
 ## Steps
 ### Sample Input text file "Test 4.docx"
+<a href="(https://github.com/Ailaysa/dj_ailaysa/blob/dev_txt/Input_Samples/Test%204.docx" target="_blank">Please download the Raw Document</a>
 [Please download the Raw Document](https://github.com/Ailaysa/dj_ailaysa/blob/dev_txt/Input_Samples/Test%204.docx)
 
 ## Current Approach
@@ -23,7 +24,7 @@ For Better understanding, kindly go through the following steps or simply try on
 4.	The results are verified in the Ratel tool by the given Regex pattern. An SRX file is hence created post verification.
 
 ## Segmentation Rules
-Here is the retrived [Default SRX file](https://github.com/Ailaysa/dj_ailaysa/blob/dev_txt/SegmentationRules/okapi_default_icu4j.srx){:target="_blank" rel="noopener"} from Okapi Framework. 
+Here is the retrived [Default SRX file](https://github.com/Ailaysa/dj_ailaysa/blob/dev_txt/SegmentationRules/okapi_default_icu4j.srx) from Okapi Framework. 
 
 
 ## Spring Boot codebase
