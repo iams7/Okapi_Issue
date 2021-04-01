@@ -33,7 +33,7 @@ Please find the [GitHub link to the Java Spring Boot code base](https://github.c
 Please find the [GitHub link to the Python - Django code base](https://github.com/Ailaysa/dj_ailaysa) where the result of Okapi implementations are received as Json response.
 
 ## The Result we are getting while running mainProcessor.java
-![Wokspace_Capture](https://user-images.githubusercontent.com/15103613/112992601-eeeb2d80-9185-11eb-8126-5178bb0d2edc.PNG)
+![Workspace_Capture](https://user-images.githubusercontent.com/15103613/112992601-eeeb2d80-9185-11eb-8126-5178bb0d2edc.PNG)
 
 
 From the above process, we are about to take the Text content from the input file (i.e. source2.txt) are being extracted by Sentences, but the issue is that we are unaware of any methods for processing text which is in different formats.
