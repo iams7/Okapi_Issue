@@ -18,18 +18,18 @@ Then reading the sengented sentences one by one using for loop.
  // 	Obtain segmented sentences one by one
 	for (Segment seg : segs) {
 
-	TextFragment tf = seg.getContent();
-	String segmented_text = seg.toString();
-	String coded_text = tf.getCodedText();
-	String text = tf.getText();
-	List<Code> codes = tf.getCodes();
+		TextFragment tf = seg.getContent();
+		String segmented_text = seg.toString();
+		String coded_text = tf.getCodedText();
+		String text = tf.getText();
+		List<Code> codes = tf.getCodes();
 
-	System.out.println("\n");
-	System.out.println("SEG==>"+seg.toString());
-	System.out.println("GET CODES==>"+codes);
-	System.out.println("CODED Text ==>"+coded_text);
-	System.out.println("JUST TEXT ==>" + text);
-	System.out.println("\n");
+		System.out.println("\n");
+		System.out.println("SEG==>"+seg.toString());
+		System.out.println("GET CODES==>"+codes);
+		System.out.println("CODED Text ==>"+coded_text);
+		System.out.println("JUST TEXT ==>" + text);
+		System.out.println("\n");
 	}
 ```
 The output of the above code as follows,
