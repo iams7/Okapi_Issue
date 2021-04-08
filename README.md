@@ -12,7 +12,7 @@ In the current process, the problems persists on extracting translatable text co
 ISegments segs = tc.getSegments();
 segs.create(segmenter.getRanges());
 ```
-Then reading the sengented sentences one by one using for loop.
+Then while reading the sengented sentences one by one using for loop,
 
 ```
  // 	Obtain segmented sentences one by one
@@ -36,8 +36,10 @@ The output of the above code as follows,
 
 ![2021-04-08 13_09_07-translate – mainProcessor java](https://user-images.githubusercontent.com/15103613/113988425-17051b80-986d-11eb-8414-6d8f47ce52a2.png)
 
+Here is the [input file](https://github.com/Ailaysa/dj_ailaysa/blob/sridhar_dev/Input_Samples/Test%204.docx)
+
 # Issues
-But if we use the '**_coded_text_**' to show up on the workspace, we are getting these 2 major issues
+When we use the '**_coded_text_**' to show up on the workspace, we are getting these 2 major issues.
 
 ## 1. Messing up with the **_coded_text_** at the workspace window.
 ![2021-04-08 12_48_13-Workspace Editor](https://user-images.githubusercontent.com/15103613/113986030-6ac23580-986a-11eb-88b4-1e3f33e50b4a.png)
