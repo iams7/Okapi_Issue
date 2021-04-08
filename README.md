@@ -15,8 +15,8 @@ segs.create(segmenter.getRanges());
 Then reading the sengented sentences one by one using for loop.
 
 ```
- // Obtain segmented sentences one by one
-    for (Segment seg : segs) {
+ // 	Obtain segmented sentences one by one
+	for (Segment seg : segs) {
 
 	TextFragment tf = seg.getContent();
 	String segmented_text = seg.toString();
@@ -35,7 +35,8 @@ Then reading the sengented sentences one by one using for loop.
 The output of the above code as follows,
 ![2021-04-08 13_09_07-translate – mainProcessor java](https://user-images.githubusercontent.com/15103613/113988425-17051b80-986d-11eb-8414-6d8f47ce52a2.png)
 
-# But if we use the '**_coded_text_**' to show up on the workspace, we are getting these many issues
+# Issues
+But if we use the '**_coded_text_**' to show up on the workspace, we are getting these 2 major issues
 
 ## 1. Messing up with the **_coded_text_** at the workspace window.
 ![2021-04-08 12_48_13-Workspace Editor](https://user-images.githubusercontent.com/15103613/113986030-6ac23580-986a-11eb-88b4-1e3f33e50b4a.png)
@@ -235,28 +236,38 @@ web_1             | [08/Apr/2021 06:45:50] "GET /document/4 HTTP/1.1" 200 589
 web_1             | [08/Apr/2021 06:46:00] "GET /document/4 HTTP/1.1" 200 589
 ```
 
-For Better understanding, kindly go through the following steps or simply try on your way of testing. Please don't hesitate to raise an opition to understand more regarding this workflow or to point out if you've any idea to resolve this issue.
+# Tried another way
+Also, I have tried using obtained segments directly instead of using coded text from the segmentation. And the flow of that follows as below,
 
-## Steps
-### Sample Input text file "Test 4.docx"
-[Please download the Raw Document](https://github.com/Ailaysa/dj_ailaysa/blob/dev_txt/Input_Samples/Test%204.docx)
+```
+// Obtain segmented sentences one by one
+	for (Segment seg : segs) {
+		String segmented_text = seg.toString();
 
-## Current Approach
-1.	Using Okapi Framework, Set of File filters are being used in the implementation for File Formatting to extract translatable text from the input text source (e.g. Sample.txt, sample.docx. sample.html, etc). 
-	A Simple ".docx" format is chosen for the implementing basic process now.
-2.	Extracted translatable content from the files using File filter (OpenXMLFilter) is about to segment the text as sentences. </br>
-    For example, When the document consists of set of paragraphs, each paragraph would consist number of sentences. Here, in the extraction process, we need the segmented on sentence-wise in order to reduce the complexity on the workspace.
-3.	While working with Rainbow tool, it seems, it has been designed to use SRX Segmentary [SRXSegmenter] for segmenting each sentence from the input source/document (i.e. file content). Segmentation rules is required for SRXSegmenter. So, we have taken a Default SRX Rules from the Rainbow tool for sentence-wise segmentation (which is tested using Ratel tool as well - by applying it's regex patterns) from Okapi framework. 
-4.	The results are verified in the Ratel tool by the given Regex pattern. An SRX file is hence created post verification.
+		TextPair textPair = new TextPair();
+		textPair.setOriginal(segmented_text);
+		List<TextPair> list = textMap.containsKey(id) ? textMap.get(id) : new ArrayList<>();
+		list.add(textPair);
+		textMap.put(id, list);
+	}
+```
 
-## Segmentation Rules
-Here is the retrived [Default SRX file](https://github.com/Ailaysa/dj_ailaysa/blob/dev_txt/SegmentationRules/okapi_default_icu4j.srx) from Okapi Framework. 
+## Output Obtained in the Postman API Browser as follows,
+![2021-04-08 12_14_46-Postman](https://user-images.githubusercontent.com/15103613/113993342-01462500-9872-11eb-87fb-6743d7c6a7e9.png)
+
+And the same data were received in the workspace window,
+![2021-04-08 09_48_39-Workspace Editor](https://user-images.githubusercontent.com/15103613/113994871-5b93b580-9873-11eb-9101-feb870bbd638.png)
+
+which then gets saved in the database table as well but when downloading the saved file, there is no translation were written on the target file (downloaded translated file is same as the source file).
+
+# References
+Please find the code base of source files from the below GitHub Links.
 
 ## Spring Boot codebase
-Please find the [GitHub link to the Java Spring Boot code base](https://github.com/Ailaysa/spring_ailaysa) where the Okapi classes had been used for our implementation. Please clone **_dev_txt_** branch.
+Please find the [GitHub link to the Java Spring Boot code base](https://github.com/Ailaysa/spring_ailaysa) where the Okapi classes had been used for our implementation. Please clone **_sridhar_dev_** branch.
 
 ## Django codebase
-Please find the [GitHub link to the Python - Django code base](https://github.com/Ailaysa/dj_ailaysa) where the result of Okapi implementations are received as Json response. Please clone **_dev_txt_** branch.
+Please find the [GitHub link to the Python - Django code base](https://github.com/Ailaysa/dj_ailaysa) where the result of Okapi implementations are received as Json response. Please clone **_sridhar_dev_** branch.
 
 ## Quick Start for Guidance Requirement
 We ensure the tools provided by Okapi Framework for Text Filters, Sentence Segmentation, Text Extraction, Translation using Google Machine Translation Engine (v2, paid services), Translated Content Merging and Translated File Output.
