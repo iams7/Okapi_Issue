@@ -253,13 +253,13 @@ Also, I have tried using obtained segments directly instead of using coded text 
 	}
 ```
 
-## Output Obtained in the Postman API Browser as follows,
-![2021-04-08 12_14_46-Postman](https://user-images.githubusercontent.com/15103613/113993342-01462500-9872-11eb-87fb-6743d7c6a7e9.png)
-
-And the same data were received in the workspace window,
+## Output Obtained in the Workspace as follows,
 ![2021-04-08 09_48_39-Workspace Editor](https://user-images.githubusercontent.com/15103613/113994871-5b93b580-9873-11eb-9101-feb870bbd638.png)
 
-which then gets saved in the database table as well but when downloading the saved file, there is no translation were written on the target file (downloaded translated file is same as the source file).
+And the same data were written in the database which then read on Postman API Browser,
+![2021-04-08 12_14_46-Postman](https://user-images.githubusercontent.com/15103613/113993342-01462500-9872-11eb-87fb-6743d7c6a7e9.png)
+
+But there are no translation were written on the target file (downloaded translated file is same as the source file) when following this method.
 
 # References
 Please find the code base of source files from the below GitHub Links.
