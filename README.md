@@ -49,7 +49,7 @@ When we use the '**_coded_text_**' to show up on the workspace, we are getting t
 
 ### And the result we get using Postman API Browser as follows,
 ![2021-04-08 12_16_32-Postman](https://user-images.githubusercontent.com/15103613/113989214-d954c280-986d-11eb-8e10-5c0be194c773.png)
-The above text will be written to the new MS Word (text) file which will be downloaded later
+The above translated text will be written to the new MS Word (text) file which will be downloaded later
 
 ## 2. And the file gets corrupted during download (after post editing process). 
 The respecting data obtaied from the console terminal are as follows,
