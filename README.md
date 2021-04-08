@@ -41,10 +41,10 @@ Here is the [input file](https://github.com/Ailaysa/dj_ailaysa/blob/sridhar_dev/
 # Issues
 When we use the '**_coded_text_**' to show up on the workspace, we are getting these 2 major issues.
 
-## 1. Messing up with the **_coded_text_** at the workspace window.
+## 1. **_coded_text_** messed up at the workspace window.
 ![2021-04-08 12_48_13-Workspace Editor](https://user-images.githubusercontent.com/15103613/113986030-6ac23580-986a-11eb-88b4-1e3f33e50b4a.png)
 
-### Coded text and its translation are getting added into the database table on saving each sentences as follows
+### Both Coded text and its translation are getting added into the database table on saving each sentences as follows
 ![2021-04-08 12_20_58-DB Browser for SQLite - D__Sridhar Workspace_Ailaysa io_Backend_dj_ailaysa_db_ai](https://user-images.githubusercontent.com/15103613/113988708-5cc1e400-986d-11eb-87fa-111a027c9e2a.png)
 
 ### And the result we get using Postman API Browser as follows,
