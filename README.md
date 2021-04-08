@@ -261,7 +261,7 @@ Also, I have tried using obtained segments directly instead of using coded text 
 And the same data were written in the database which then read on Postman API Browser,
 ![2021-04-08 12_14_46-Postman](https://user-images.githubusercontent.com/15103613/113993342-01462500-9872-11eb-87fb-6743d7c6a7e9.png)
 
-But there are no translation were written on the target file (downloaded translated file is same as the source file) when following this method.
+In this case, the run tags works fine. But there is no change were found on the downloaded target file (downloadable translated file being created but its same as the source file - translated text are not overridden on the new file).
 
 # References
 Please find the code base of source files from the below GitHub Links.
