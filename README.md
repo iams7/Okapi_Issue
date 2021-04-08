@@ -33,6 +33,7 @@ Then reading the sengented sentences one by one using for loop.
 	}
 ```
 The output of the above code as follows,
+
 ![2021-04-08 13_09_07-translate – mainProcessor java](https://user-images.githubusercontent.com/15103613/113988425-17051b80-986d-11eb-8414-6d8f47ce52a2.png)
 
 # Issues
@@ -235,8 +236,8 @@ web_1             | [08/Apr/2021 06:43:53] "POST /api/translatedContentToFile HT
 web_1             | [08/Apr/2021 06:45:50] "GET /document/4 HTTP/1.1" 200 589
 web_1             | [08/Apr/2021 06:46:00] "GET /document/4 HTTP/1.1" 200 589
 ```
-
-# Tried another way
+</br>
+# In another way
 Also, I have tried using obtained segments directly instead of using coded text from the segmentation. And the flow of that follows as below,
 
 ```
