@@ -52,7 +52,7 @@ When we use the '**_coded_text_**' to show up on the workspace, we are getting t
 The above translated text will be written to the new MS Word (text) file which will be downloaded later
 
 ## 2. And the file gets corrupted during download (after post editing process). 
-The respecting data obtaied from the console terminal are as follows,
+The respective data obtained from the terminal are as follows,
 ```
 web_1             | [08/Apr/2021 06:42:45] "POST /api/login HTTP/1.1" 200 217
 web_1             | [08/Apr/2021 06:42:46] "GET /api/getLangs HTTP/1.1" 200 2879
